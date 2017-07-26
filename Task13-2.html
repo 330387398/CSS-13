@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge，chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title>CSS-任务13：桌游精灵-2-投票</title>
+		<link rel="stylesheet" type="text/css" href="css/Task13-2.css">
+	</head>
+	<body>
+		<header>
+			<div class="menu"><img src="img/2-1.png" width="25px" height="25px" /></div>
+			<a href="Task13-1.html"><div class="goback"><img src="img/2-2.png" width="25px" height="25px" /></div></a>
+			<p class="vote">投 票</p>
+		</header>
+		<main>
+			<div class="row1">
+				<p class="please">发言讨论结束，大家请投票</p>
+				<audio src="audio.mp3" controls="controls" id="music" hidden="hidden"></audio>
+				<div id="player" onclick="player()" class="play"><img src="img/2-3.png" width="40px" height="40px" /></div>
+				<script>
+	            	function player(){
+	                	var audio=document.getElementById('music');
+	                	if(audio.paused){
+	                   		audio.play();
+	                	}
+	                	else{
+	                    	audio.pause();
+	                	}
+	            	}
+        		</script>
+			</div>
+			<div class="row2">
+				<div class="down"></div>
+				<p class="click">点击得票数最多人的头像</p>
+			</div>
+			<div class="layer0">
+				<div class="layer1">
+					<div class="layer2">
+						水民
+						<div class="layer3">1号</div>
+					</div>
+					<div class="layer4">
+						<div class="img"><img src="img/2-4-1.png" width="15px" height="15px" /></div>
+						<div class="img"><img src="img/2-4-2.png" width="15px" height="15px" /></div>
+						<div class="img"><img src="img/2-4-3.png" width="15px" height="15px" /></div>
+						<div><img src="img/2-4-4.png" width="15px" height="15px" /></div>
+					</div>
+				</div>
+				<div class="layer1">
+					<div class="layer2">
+						水民
+						<div class="layer3">2号</div>
+					</div>
+					<div class="layer4">
+						<div class="img"><img src="img/2-4-1.png" width="15px" height="15px" /></div>
+						<div class="img"><img src="img/2-4-2.png" width="15px" height="15px" /></div>
+						<div class="img"><img src="img/2-4-3.png" width="15px" height="15px" /></div>
+						<div><img src="img/2-4-4.png" width="15px" height="15px" /></div>
+					</div>
+				</div>
+				<div class="layer1">
+					<div class="layer2">
+						警察
+						<div class="layer3">3号</div>
+					</div>
+					<div class="layer4">
+						<div class="img"><img src="img/2-4-1.png" width="15px" height="15px" /></div>
+						<div class="img"><img src="img/2-4-2.png" width="15px" height="15px" /></div>
+						<div class="img"><img src="img/2-4-3.png" width="15px" height="15px" /></div>
+						<div><img src="img/2-4-4.png" width="15px" height="15px" /></div>
+					</div>
+				</div>
+				<div class="layer1">
+					<div class="layer2">
+						法官
+						<div class="layer3">4号</div>
+					</div>
+					<div class="layer4">
+						<div class="img"><img src="img/2-4-1.png" width="15px" height="15px" /></div>
+						<div class="img"><img src="img/2-4-2.png" width="15px" height="15px" /></div>
+						<div class="img"><img src="img/2-4-3.png" width="15px" height="15px" /></div>
+						<div><img src="img/2-4-4.png" width="15px" height="15px" /></div>
+					</div>
+				</div>
+				<div class="layer1">
+					<div class="layer2">
+						狙击手
+						<div class="layer3">5号</div>
+					</div>
+					<div class="layer4">
+						<div class="img"><img src="img/2-4-1.png" width="15px" height="15px" /></div>
+						<div class="img"><img src="img/2-4-2.png" width="15px" height="15px" /></div>
+						<div class="img"><img src="img/2-4-3.png" width="15px" height="15px" /></div>
+						<div><img src="img/2-4-4.png" width="15px" height="15px" /></div>
+					</div>
+				</div>
+				<div class="layer1">
+					<div class="layer2">
+						医生
+						<div class="layer3">6号</div>
+					</div>
+					<div class="layer4">
+						<div class="img"><img src="img/2-4-1.png" width="15px" height="15px" /></div>
+						<div class="img"><img src="img/2-4-2.png" width="15px" height="15px" /></div>
+						<div class="img"><img src="img/2-4-3.png" width="15px" height="15px" /></div>
+						<div><img src="img/2-4-4.png" width="15px" height="15px" /></div>
+					</div>
+				</div>
+				<div class="layer1">
+					<div class="layer2">
+						杀手
+						<div class="layer3">7号</div>
+					</div>
+					<div class="layer4">
+						<div class="img"><img src="img/2-4-1.png" width="15px" height="15px" /></div>
+						<div class="img"><img src="img/2-4-2.png" width="15px" height="15px" /></div>
+						<div class="img"><img src="img/2-4-3.png" width="15px" height="15px" /></div>
+						<div><img src="img/2-4-4.png" width="15px" height="15px" /></div>
+					</div>
+				</div>
+				<div class="layer1">
+					<div class="layer2">
+						水民
+						<div class="layer3">8号</div>
+					</div>
+					<div class="layer4">
+						<div class="img"><img src="img/2-4-1.png" width="15px" height="15px" /></div>
+						<div class="img"><img src="img/2-4-2.png" width="15px" height="15px" /></div>
+						<div class="img"><img src="img/2-4-3.png" width="15px" height="15px" /></div>
+						<div><img src="img/2-4-4.png" width="15px" height="15px" /></div>
+					</div>
+				</div>
+				<div class="layer1">
+					<div class="layer2">
+						水民
+						<div class="layer3">9号</div>
+					</div>
+					<div class="layer4">
+						<div class="img"><img src="img/2-4-1.png" width="15px" height="15px" /></div>
+						<div class="img"><img src="img/2-4-2.png" width="15px" height="15px" /></div>
+						<div class="img"><img src="img/2-4-3.png" width="15px" height="15px" /></div>
+						<div><img src="img/2-4-4.png" width="15px" height="15px" /></div>
+					</div>
+				</div>
+				<div class="layer1">
+					<div class="layer2">
+						水民
+						<div class="layer3">10号</div>
+					</div>
+					<div class="layer4">
+						<div class="img"><img src="img/2-4-1.png" width="15px" height="15px" /></div>
+						<div class="img"><img src="img/2-4-2.png" width="15px" height="15px" /></div>
+						<div class="img"><img src="img/2-4-3.png" width="15px" height="15px" /></div>
+						<div><img src="img/2-4-4.png" width="15px" height="15px" /></div>
+					</div>
+				</div>
+				<div class="layer1">
+					<div class="layer2">
+						水民
+						<div class="layer3">11号</div>
+					</div>
+					<div class="layer4">
+						<div class="img"><img src="img/2-4-1.png" width="15px" height="15px" /></div>
+						<div class="img"><img src="img/2-4-2.png" width="15px" height="15px" /></div>
+						<div class="img"><img src="img/2-4-3.png" width="15px" height="15px" /></div>
+						<div><img src="img/2-4-4.png" width="15px" height="15px" /></div>
+					</div>
+				</div>
+				<div class="layer1">
+					<div class="layer2">
+						水民
+						<div class="layer3">12号</div>
+					</div>
+					<div class="layer4">
+						<div class="img"><img src="img/2-4-1.png" width="15px" height="15px" /></div>
+						<div class="img"><img src="img/2-4-2.png" width="15px" height="15px" /></div>
+						<div class="img"><img src="img/2-4-3.png" width="15px" height="15px" /></div>
+						<div><img src="img/2-4-4.png" width="15px" height="15px" /></div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer>
+			<div class="bottom"><a href="Task13-3.html" style="text-decoration: none;"><div class="die">投死</div></a></div>			
+		</footer>
+	</body>
+</html>

@@ -1,0 +1,238 @@
+@charset "UTF-8";
+/*
+  Document    : CSS样式初始化  
+  Created on  : 2017.7.26  
+  Author      : none  
+  Description : CSS样式表的初始化，全局样式设置。部分样式属性请根据具体页面重置其属性  
+*/
+/* reset */
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, textarea, p, blockquote, th, td, input, select, textarea, button {
+  margin: 0;
+  padding: 0; }
+
+/* 初始化标签在所有浏览器中的margin、padding值 */
+body {
+  font-size: 62.5%; }
+
+fieldset, img {
+  border: 0 none; }
+
+/* 重置fieldset（表单分组）、图片的边框为0*/
+dl, ul, ol, menu, li {
+  list-style: none; }
+
+/* 重置类表前导符号为onne,menu在HTML5中有效 */
+blockquote, q {
+  quotes: none; }
+
+/* 重置嵌套引用的引号类型 */
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none; }
+
+/* 重置嵌套引用*/
+input, select, textarea, button {
+  vertical-align: middle; }
+
+/* 重置表单控件垂直居中*/
+button {
+  border: 0 none;
+  background-color: transparent;
+  cursor: pointer; }
+
+/* 重置表单button按钮效果 */
+body {
+  background: #fff; }
+
+/* 重置body 页面背景为白色 */
+body, th, td, input, select, textarea, button {
+  font-size: 12px;
+  line-height: 1;
+  font-family: "微软雅黑", "黑体","宋体";
+  color: #666; }
+
+/* 重置页面文字属性 */
+a {
+  color: #666;
+  text-decoration: none; }
+
+/* 重置链接a标签 */
+a:active, a:hover {
+  text-decoration: none; }
+
+/* 重置链接a标签的鼠标滑动效果 */
+address, caption, cite, code, dfn, em, var {
+  font-style: normal;
+  font-weight: normal; }
+
+/* 重置样式标签的样式 */
+caption {
+  display: none; }
+
+/* 重置表格标题为隐藏 */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  table-layout: fixed; }
+
+/* 重置table属性 */
+img {
+  vertical-align: top; }
+
+/* 图片在当前行内的垂直位置 */
+/* 页面设置 */
+a {
+  outline: none; }
+
+a:active {
+  star: expression(this.onFocus=this.blur()); }
+
+/* 取消a标签点击后的虚线框 */
+::selection {
+  color: #fff;
+  background-color: #4C6E78; }
+
+::-moz-selection {
+  color: #fff;
+  background-color: #4C6E78; }
+
+/* 设置页面文字等在拖动鼠标选中情况下的背景色与文字颜色 */
+.clearfix:before, .clearfix:after {
+  content: '';
+  display: table; }
+
+.clearfix:after {
+  clear: both; }
+
+/*清除浮动*/
+header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 3rem;
+  color: white;
+  font-size: 1.2rem;
+  text-align: center;
+  background-color: #29bde0; }
+
+main2 {
+  position: absolute;
+  top: 21.4rem;
+  bottom: 0;
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: auto; }
+
+@media only screen and (max-width: 730px) {
+  main2 {
+    top: 23.5rem; } }
+@media only screen and (max-width: 373px) {
+  main2 {
+    top: 25.3rem; } }
+.row {
+  border-bottom: 1px solid lightgray;
+  height: 5rem; }
+
+.date {
+  padding: 0.6rem 0 0 3.6rem;
+  margin-bottom: 0.4rem;
+  font-size: 1rem; }
+
+.time {
+  float: right;
+  margin: -1.2rem 3.6rem 0 0;
+  color: lightgray;
+  font-size: 0.6rem; }
+
+.night {
+  padding: 0 0 0 3.6rem;
+  color: darkgray;
+  line-height: 1.2rem; }
+
+body {
+  overflow: hidden; }
+
+.home {
+  float: left;
+  margin: 0.6rem 0 0 1rem; }
+
+.notice {
+  float: right;
+  margin: 0.6rem 1rem 0 0;
+  cursor: pointer; }
+
+.result {
+  margin-top: 0.6rem;
+  padding-top: 0.2rem; }
+
+main1 {
+  position: absolute;
+  top: 3rem;
+  width: 100%;
+  background-color: #29bde0;
+  border-top: 0.1px solid lightgray; }
+
+.content {
+  width: 100%;
+  text-align: center; }
+
+.victory {
+  padding: 1rem 0; }
+
+.good {
+  position: absolute;
+  left: 10%;
+  right: 10%;
+  margin: -0.5rem 0 0 0;
+  color: #ffc865;
+  font-size: 1.1rem;
+  font-weight: bold;
+  line-height: 1.8rem; }
+
+@media only screen and (max-width: 730px) {
+  .good {
+    text-align: left; } }
+.number {
+  margin: 2rem auto 1.5rem auto;
+  width: 13rem;
+  color: white;
+  line-height: 1.2rem; }
+
+@media only screen and (max-width: 730px) {
+  .number {
+    margin: 3.8rem auto 1.5rem auto; } }
+@media only screen and (max-width: 373px) {
+  .number {
+    margin: 5.6rem auto 1.5rem auto; } }
+.text {
+  text-align: left; }
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 3.8rem;
+  background-color: rgba(41, 189, 224, 0.5); }
+
+.again, .upload {
+  padding: 0.75rem 0 0 0;
+  width: 8rem;
+  height: 2.1rem;
+  color: white;
+  font-size: 1.2rem;
+  text-align: center;
+  border-radius: 5px; }
+
+.again {
+  float: left;
+  margin: 0.5rem 0 0 1rem;
+  background-color: #f66f6f; }
+
+.upload {
+  float: right;
+  margin: 0.5rem 1rem 0 0;
+  background-color: #fbb435;
+  cursor: pointer; }
+
+/*# sourceMappingURL=Task13-3.css.map */

@@ -1,0 +1,43 @@
+@charset "utf-8";  
+@import 'header/parameter/parameter';
+
+//页面三游戏过程记录部分代码
+
+main2{
+    position: absolute;
+    top: 21.4rem;
+    bottom: 0;
+    width: $width;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+@media only screen and (max-width: 730px){
+    main2{
+        top: 23.5rem;
+    }
+}
+@media only screen and (max-width: 373px){
+    main2{
+        top: 25.3rem;
+    }
+}
+.row{
+    border-bottom: 1px solid $color6;
+    height: $bottom;
+}
+.date{
+    padding: 0.6rem 0 0 3.6rem;
+    margin-bottom: 0.4rem;
+    font-size: 1rem;
+}
+.time{
+    float: right;
+    margin: -1.2rem 3.6rem 0 0;
+    color: $color6;
+    font-size: 0.6rem;
+}
+.night{
+    padding: 0 0 0 3.6rem;
+    color: $color7;
+    line-height: 1.2rem;
+}

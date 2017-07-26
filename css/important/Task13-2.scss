@@ -1,0 +1,43 @@
+@charset "utf-8";  
+@import 'header/parameter/parameter';
+
+//页面二身份牌部分代码（包括hover效果及响应式）
+
+.layer0{
+    margin-top: 5rem;
+}
+.layer1{
+    float: left;
+    margin: 1rem 5%;
+    width: 4.4rem;
+    height: $top;
+    cursor: pointer; 
+}
+.layer2{
+    padding-top: 0.9rem;
+    width: 4rem;
+    height: 3.1rem;
+    font-size: 0.9rem;
+    text-align: center;
+    background-color: rgb(245,201,123);
+    border: 0.2rem solid $color5;
+}
+.layer3{
+    margin-top: 1.1rem;
+    padding-top: 0.2rem;
+    width: 4rem;
+    height: 0.9rem;
+    color: $color5;
+    font-size: 0.7rem;
+    background-color: rgb(131,176,154);
+}
+.layer4{
+    display: none;
+    margin-top: 0.65rem;
+}
+.img{
+    margin-right: 0.22rem;
+}
+.layer1:hover .layer4{
+    display: flex;
+}

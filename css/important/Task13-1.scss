@@ -1,0 +1,59 @@
+@charset "utf-8";
+@import 'header/parameter/parameter';
+
+//页面一侧边栏部分代码（包括hover效果及响应式）
+
+.leftmenu{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: -0.9rem 0 0 -1.5rem;    
+    width: 15rem;
+    height: 48rem;
+    background-color: $color5;
+    box-shadow: -1px 0 10px lightgray inset;
+}
+.leftmenu li {
+    width: 15rem;
+    height: 3rem;
+    color: $color4;
+    font-size: 1rem; 
+    border-bottom: 1px solid $color6;
+    list-style-type: none;
+}
+.img1{
+    padding: 0.8rem 0 0 1rem;
+}
+.left{
+    margin: -1.3rem 0 0 3rem;
+}
+.img2{
+    float: right;
+    margin: -1.2rem 1rem 0 0;
+}
+.menu:hover .leftmenu{
+    display: block;
+}
+.menu:hover + .body2{
+    margin-left: 15rem;
+}
+@media only screen and (max-width: 650px) {
+    .leftmenu,.leftmenu li{
+        width: 10rem;
+    }
+    .menu:hover + .body2{
+        margin-left: 10rem;
+    }
+    .menu:hover + .body2>footer>.right2{
+        right: 0.2rem;    
+    }
+}
+@media only screen and (max-width: 550px) {
+    .menu:hover + .body2>footer>a>.btn{
+        width: 12rem;    
+    }
+    .menu:hover + .body2>footer>.right2{
+        right: 0.5rem;    
+    }
+}

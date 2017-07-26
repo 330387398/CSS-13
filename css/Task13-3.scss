@@ -1,0 +1,93 @@
+@import 'important/header/header';
+@import 'important/Task13-3';
+body{
+    overflow: hidden;
+}
+.home{
+    float: left;
+    margin: 0.6rem 0 0 1rem;
+}
+.notice{
+    float: right;
+    margin: 0.6rem 1rem 0 0;
+    cursor: pointer;
+}
+.result{
+    margin-top: 0.6rem;
+    padding-top: 0.2rem;
+}
+main1{
+    position: absolute;
+    top: $height;
+    width: $width;
+    background-color: $color2;
+    border-top: 0.1px solid $color6;
+}
+.content{
+    width: $width;
+    text-align: center;
+}
+.victory{
+    padding: 1rem 0;
+}
+.good{
+    position: absolute;
+    left: 10%;
+    right: 10%;
+    margin: -0.5rem 0 0 0;
+    color: rgb(255,200,101);
+    font-size: 1.1rem;
+    font-weight: bold;
+    line-height: 1.8rem;
+}
+@media only screen and (max-width: 730px){
+    .good{
+        text-align: left;
+    }
+}
+.number{
+    margin: 2rem auto 1.5rem auto;
+    width: 13rem;
+    color: $color5;
+    line-height: 1.2rem;
+}
+@media only screen and (max-width: 730px){
+    .number{
+        margin: 3.8rem auto 1.5rem auto;
+    }
+}
+@media only screen and (max-width: 373px){
+    .number{
+        margin: 5.6rem auto 1.5rem auto;
+    }
+}
+.text{
+    text-align: left;
+}
+footer{
+    position: absolute;
+    bottom: 0;    
+    width: $width;
+    height: 3.8rem;
+    background-color: rgba(41,189,224,0.5);
+}
+.again,.upload{
+    padding: 0.75rem 0 0 0;
+    width: 8rem;
+    height: 2.1rem;
+    color: $color5;
+    font-size: $fontsize;
+    text-align: center;
+    border-radius: 5px;
+}
+.again{
+    float: left;
+    margin: 0.5rem 0 0 1rem;
+    background-color: rgb(246,111,111);
+}
+.upload{    
+    float: right;
+    margin: 0.5rem 1rem 0 0;
+    background-color: rgb(251,180,53);
+    cursor: pointer;
+}

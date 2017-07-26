@@ -1,0 +1,16 @@
+@charset "utf-8";  
+@import 'reset/reset';
+@import 'parameter/parameter';
+
+//页面顶部样式（三个页面通用）
+
+header{
+    position: absolute;
+    top: 0;
+    width: $width;
+    height: $height;
+    color: $color5;
+    font-size: $fontsize;
+    text-align: center;
+    background-color: $color2;
+}

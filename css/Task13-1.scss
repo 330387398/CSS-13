@@ -1,0 +1,98 @@
+@import 'important/header/header';
+@import 'important/Task13-1';
+body{
+    background-color: $color1;
+    overflow-x: hidden;
+}
+.menu{
+    position: absolute;
+    z-index: 1;
+    top: 0.9rem;
+    left: 1.5rem;    
+    cursor: pointer;
+}
+.menu2{
+    position: absolute;
+    top: 0.9rem;
+    left: 1.5rem;    
+    cursor: pointer;
+}
+main{
+    position: relative;
+    top: $bottom;
+    left: $left;
+    width: $width2;
+    height: auto;
+    cursor: pointer;
+}
+.last{
+    padding: 1.3rem 0 0 1rem;
+    height: 2.8rem;
+    font-size: 1.4rem;
+    color: $color6;
+    text-align: center;
+    background-color: $color5;   
+    border: 1px solid $color6;
+}
+.right1{    
+    float: right;
+    margin: -0.1rem 1rem 0 0;
+}
+footer{
+    position: relative;
+    top: 7rem;
+    left: $left;
+    width: $width2;
+    height: 35rem;
+    text-align: center;
+    background-color: $color5;
+    border: 1px solid $color6;
+}
+.top{
+    margin: 0 0 2rem 0;
+    padding: 1.2rem 0 0 0;
+    height: 2.8rem;
+    font-size: 1.5rem;
+    color: $color3;
+    text-align: center;
+    border-bottom: 0.5px solid $color3;
+}
+.right2{
+    position: absolute;
+    top: 16rem;
+    right: 1rem;
+    cursor: pointer;
+}
+.btn{
+    margin: 1rem auto;
+    padding: 2.1rem 0 0 0;
+    width: 18rem;
+    height: 3.2rem;
+    font-size: 1.1rem;
+    color: $color5;
+    background-color: $color4;
+}
+.number{
+    color: $color7;
+}
+.bottom{
+    display: flex;
+    margin: 0 auto;
+    width: 4.8rem;
+}
+.circle{
+    margin: 2rem 0.2rem;
+    width: 0.8rem;
+    height: 0.8rem;    
+    background-color: $color1;
+    border-radius: 50%;    
+    cursor: pointer;
+}
+.circle:hover{
+    background-color: $color4;
+}
+@media only screen and (max-width: 425px) {
+    .btn{
+        width: 12rem;
+    }
+}

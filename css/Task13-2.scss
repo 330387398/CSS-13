@@ -1,0 +1,81 @@
+@import 'important/header/header';
+@import 'important/Task13-2';
+body{
+    background-color: $color2;
+    overflow: hidden;
+}
+.menu{
+    float: left;
+    margin: 0.7rem 0 0 1.5rem;
+    cursor: pointer;
+}
+.goback{
+    float: right;
+    margin: 0.7rem 1.5rem 0 0;
+    cursor: pointer;
+}
+.vote{
+    margin-top: 0.8rem;
+}
+main{
+    position: absolute;
+    top: 3rem;
+    bottom: $bottom;    
+    width: $width;    
+    overflow-x: hidden;
+    overflow-y: auto;    
+}
+.row1{
+    position: absolute;
+    top: $height;
+    margin-top: -3rem;
+    width: $width;
+    height: $height;
+    background-color: $color8; 
+}
+.please{
+    padding: 1.05rem 0 0 2rem;
+}
+.play{
+    position: absolute;
+    top: 0.2rem;
+    right: 1rem;
+    cursor: pointer;
+}
+.row2{
+    position: absolute;
+    top: $height;
+    padding: 0 0 0 3rem;
+    width: $width;
+    height: 2rem;    
+    color: $color5;    
+}
+.down{
+    width:0;   
+    height:0;   
+    border-top:7px solid $color8;
+    border-left:7px solid transparent;   
+    border-right:7px solid transparent;   
+}
+.click{
+    padding-top: 0.5rem;
+}
+footer{
+    position: absolute;
+    bottom: 0;
+    width: $width;
+    height: $bottom;
+    text-align: center;
+}
+.bottom{
+    width: 12rem;
+    margin: 0 auto;
+}
+.die{
+    margin-top: 1rem;
+    padding-top: 0.55rem;
+    height: 2.45rem;
+    color: $color5;
+    font-size: 1.6rem;   
+    background-color: rgb(251,180,53);
+}
